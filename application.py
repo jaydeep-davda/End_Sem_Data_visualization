@@ -1,5 +1,4 @@
 #Import libraries
-pip install -r requirements.txt
 import pandas as pd
 import streamlit as st
 import seaborn as sns
@@ -174,4 +173,5 @@ st.plotly_chart(fig10, use_container_width=True)
 st.subheader("📋 Filtered Dataset Preview")
 
 st.dataframe(filtered_df.head(50))
+
 
