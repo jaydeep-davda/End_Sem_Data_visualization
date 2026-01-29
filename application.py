@@ -5,6 +5,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 
+df = pd.read_csv("cleaned_video_game_sales.csv")
+
 st.set_page_config(
     page_title="Global Video Game Sales Dashboard",
     layout="wide"
@@ -173,5 +175,6 @@ st.plotly_chart(fig10, use_container_width=True)
 st.subheader("📋 Filtered Dataset Preview")
 
 st.dataframe(filtered_df.head(50))
+
 
 
